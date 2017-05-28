@@ -10,7 +10,7 @@ A lightweight library for converting between units.
 ## Usage
 
 ``` swift
-let inch = 1.inches
+let inch = 1.inch
 
 let converted = inch.to(.millimeter) // 25.4
 ```
