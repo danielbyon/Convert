@@ -71,4 +71,36 @@ public extension Double {
         return Frequency(value: self, unit: .gigahertz)
     }
 
+    public var degreesPerHour: Frequency {
+        return Frequency(value: self, unit: .degreesPerHour)
+    }
+
+    public var degreesPerMinute: Frequency {
+        return Frequency(value: self, unit: .degreesPerMinute)
+    }
+
+    public var degreesPerSecond: Frequency {
+        return Frequency(value: self, unit: .degreesPerSecond)
+    }
+
+    public var radiansPerHour: Frequency {
+        return Frequency(value: self, unit: .radiansPerHour)
+    }
+
+    public var radiansPerMinute: Frequency {
+        return Frequency(value: self, unit: .radiansPerMinute)
+    }
+
+    public var radiansPerSecond: Frequency {
+        return Frequency(value: self, unit: .radiansPerSecond)
+    }
+
+    public var revolutionsPerHour: Frequency {
+        return Frequency(value: self, unit: .revolutionsPerHour)
+    }
+
+    public var revolutionsPerMinute: Frequency {
+        return Frequency(value: self, unit: .revolutionsPerMinute)
+    }
+
 }
