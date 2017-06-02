@@ -28,13 +28,13 @@ import Foundation
 public struct Area: Convertible {
 
     public enum Unit: Double {
-        case squareInch = 1_550.0
-        case squareFoot = 0.092_903
-        case squareYard = 0.836_127
+        case squareInch = 0.000_645_16
+        case squareFoot = 0.092_903_04
+        case squareYard = 0.836_127_36
         case squareMeter = 1.0
         case squareKilometer = 1_000_000.0
-        case squareMile = 2_589_988.11
-        case acre = 4_046.86
+        case squareMile = 2_589_988.110_336
+        case acre = 4_046.873
         case hectare = 10_000.0
     }
 

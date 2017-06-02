@@ -29,17 +29,16 @@ public struct Frequency: Convertible {
 
     public enum Unit: Double {
         case hertz = 1.0
-        case kilohertz = 0.001
-        case megahertz = 0.000_001
-        case gigahertz = 0.000_000_001
-        case degreesPerHour = 1_296_000.0
-        case degreesPerMinute = 21_600.0
-        case degreesPerSecond = 360.0
-        case radiansPerHour = 22_619.467_105_8
-        case radiansPerMinute = 376.991_118_431
-        case radiansPerSecond = 6.283_185_307_2
-        case revolutionsPerHour = 3_600.0
-        case revolutionsPerMinute = 60.0
+        case kilohertz = 1_000.0
+        case megahertz = 1_000_000.0
+        case gigahertz = 1_000_000_000.0
+        case degreesPerHour = 0.000_000_771_607_938_272
+        case degreesPerMinute = 0.000_046_296_296_296_296
+        case degreesPerSecond = 0.002_777_777_777_777_78
+        case radiansPerHour = 0.000_044_209_706_414_415
+        case radiansPerMinute = 0.002_652_582_384_864_92
+        case radiansPerSecond = 0.159_154_943_091_895
+        case revolutionsPerMinute = 0.016_666_666_666_666_666
         // revolutionsPerSecond is the same as hertz, but Swift requires enum raw values to be unique
     }
 
@@ -93,10 +92,6 @@ public extension Double {
 
     public var radiansPerSecond: Frequency {
         return Frequency(value: self, unit: .radiansPerSecond)
-    }
-
-    public var revolutionsPerHour: Frequency {
-        return Frequency(value: self, unit: .revolutionsPerHour)
     }
 
     public var revolutionsPerMinute: Frequency {

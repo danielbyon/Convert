@@ -29,10 +29,10 @@ public struct Speed: Convertible {
 
     public enum Unit: Double {
         case meterPerSecond = 1.0
-        case milePerHour = 2.236_94
-        case footPerSecond = 3.280_84
-        case kilometerPerHour = 3.6
-        case knot = 1.943_84
+        case milePerHour = 0.447_04
+        case footPerSecond = 0.000_084_666_666_666_667
+        case kilometerPerHour = 0.277_777_777_777_777_8
+        case knot = 0.514_444
     }
 
     public let value: Double

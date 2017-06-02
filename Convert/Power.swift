@@ -33,7 +33,7 @@ public struct Power: Convertible {
         case kilowatt = 1_000.0
         case megawatt = 1_000_000.0
         case gigawatt = 1_000_000_000.0
-        case horsepower = 745.699_871_582_3
+        case horsepower = 745.699_871_582_270_2
     }
 
     public let value: Double

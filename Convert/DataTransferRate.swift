@@ -28,17 +28,18 @@ import Foundation
 public struct DataTransferRate: Convertible {
 
     public enum Unit: Double {
-        case bitPerSecond = 1_000_000.0
-        case kilobitPerSecond = 1_000.0
-        case kilobytePerSecond = 125.0
+        case bitPerSecond = 0.000_001
+        case bytePerSecond = 0.000_008
+        case kilobitPerSecond = 0.001
+        case kilobytePerSecond = 0.008
         case megabitPerSecond = 1.0
-        case megabytePerSecond = 0.125
-        case gigabitPerSecond = 0.001
-        case gigabytePerSecond = 0.000_125
-        case terabitPerSecond = 0.000_001
-        case terabytePerSecond = 0.000_000_125
-        case petabitPerSecond = 0.000_000_001
-        case petabytePerSecond = 0.000_000_000_125
+        case megabytePerSecond = 8.0
+        case gigabitPerSecond = 1_000.0
+        case gigabytePerSecond = 8_000.0
+        case terabitPerSecond = 1_000_000.0
+        case terabytePerSecond = 8_000_000.0
+        case petabitPerSecond = 1_000_000_000.0
+        case petabytePerSecond = 8_000_000_000.0
     }
 
     public let value: Double
@@ -55,6 +56,10 @@ public extension Double {
 
     public var bitPerSecond: DataTransferRate {
         return DataTransferRate(value: self, unit: .bitPerSecond)
+    }
+
+    public var bytePerSecond: DataTransferRate {
+        return DataTransferRate(value: self, unit: .bytePerSecond)
     }
 
     public var kilobitPerSecond: DataTransferRate {

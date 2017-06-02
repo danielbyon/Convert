@@ -37,7 +37,7 @@ public struct Mass: Convertible {
         case kilogram = 1_000.0
         case ton = 1_000_000.0
         case carat = 0.2
-        case newton = 101.971_621_297_8
+        case newton = 101.971_621_297_792_85
         case ounce = 28.349_523_125
         case pound = 453.592_37
         case stone = 6_350.293_18

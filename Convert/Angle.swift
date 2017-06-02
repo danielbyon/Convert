@@ -29,12 +29,12 @@ public struct Angle: Convertible {
 
     public enum Unit: Double {
         case degree = 1.0
-        case radian = 57.295_8
+        case radian = 57.295_779_513_082_32
         case pi = 180.0
-        case gradian = 1.111_111_111
-        case milliradian = 17.453_3
-        case minuteOfArc = 60.0
-        case secondOfArc = 3600.0
+        case gradian = 0.9
+        case milliradian = 0.057_295_779_513_082_32
+        case minuteOfArc = 0.016_666_7
+        case secondOfArc = 0.000_277_778
     }
 
     public let value: Double

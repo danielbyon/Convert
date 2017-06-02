@@ -33,6 +33,9 @@ public struct Energy: Convertible {
         case gramcalorie = 4.184
         case kilocalorie = 4_184.0
         case watthour = 3_600.0
+        case kilowattHour = 360_000_0.0
+        case btu = 1_055.06
+        case footPound = 1.355_82
     }
 
     public let value: Double
@@ -65,6 +68,18 @@ public extension Double {
 
     public var watthour: Energy {
         return Energy(value: self, unit: .watthour)
+    }
+
+    public var kilowatthour: Energy {
+        return Energy(value: self, unit: .kilowattHour)
+    }
+
+    public var btu: Energy {
+        return Energy(value: self, unit: .btu)
+    }
+
+    public var footPound: Energy {
+        return Energy(value: self, unit: .footPound)
     }
 
 }

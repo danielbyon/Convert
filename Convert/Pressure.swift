@@ -28,11 +28,11 @@ import Foundation
 public struct Pressure: Convertible {
 
     public enum Unit: Double {
-        case atmosphere = 0.000_009_869_2
-        case bar = 0.000_01
+        case atmosphere = 101_325.0
+        case bar = 1_000_000.0
         case pascal = 1.0
-        case psi = 0.000_145_038
-        case torr = 0.007_500_62
+        case psi = 6_894.757
+        case torr = 133.322_4
     }
 
     public let value: Double

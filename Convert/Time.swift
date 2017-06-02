@@ -38,11 +38,11 @@ public struct Time: Convertible {
         case day = 86_400.0
         case week = 604_800.0
         case fortnight = 1_209_600.0
-        case month = 2_629_822.965_84
-        case year = 31_536_000.0
-        case decade = 315_360_000.0
-        case century = 3_153_600_000.0
-        case millennium = 31_536_000_000.0
+        case month = 2_592_000.0
+        case year = 315_569_52.0
+        case decade = 315_569_520.0
+        case century = 315_569_520_0.0
+        case millennium = 315_576_000_00.0
     }
 
     public let value: Double

@@ -30,7 +30,7 @@ public struct Temperature: Convertible {
     public enum Unit: Double {
         case kelvin = 1.0
         case celsius = 274.15
-        case fahrenheit = 255.9277777778
+        case fahrenheit = 255.927_777_777_777_8
     }
 
     public let value: Double

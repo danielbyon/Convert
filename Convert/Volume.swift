@@ -31,18 +31,18 @@ public struct Volume: Convertible {
         case microliter = 0.000_001
         case milliliter = 0.001
         case centiliter = 0.01
-        case liter = 1
-        case dekaliter = 10
-        case hectoliter = 100
-        case kiloliter = 1_000
-        case gill = 0.118_294_118_25
-        case gallon = 3.785_41
-        case cup = 4.166_67
-        case pint = 0.473_176_473
-        case quart = 1.136_522_5
-        case fluidOunce = 33.814
-        case teaspoon = 202.884
-        case tablespoon = 67.628
+        case liter = 1.0
+        case dekaliter = 10.0
+        case hectoliter = 100.0
+        case kiloliter = 1_000.0
+        case gill = 0.118_294_118_250_000_01
+        case gallon = 3.785_411_784_000_000_3
+        case cup = 0.236_588_236_500_000_02
+        case pint = 0.473_176_473_000_000_04
+        case quart = 0.946_352_946_000_000_1
+        case fluidOunce = 0.029_573_529_562_500_003
+        case teaspoon = 0.004_928_921_595
+        case tablespoon = 0.014_786_764_782_5
     }
 
     public let value: Double

@@ -41,7 +41,7 @@ public struct Length: Convertible {
         case foot = 0.304_8
         case fathom = 1.828_8
         case inch = 0.025_4
-        case league = 4_828.032
+        case league = 4_000.0
     }
 
     public let value: Double

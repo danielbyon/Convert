@@ -28,17 +28,18 @@ import Foundation
 public struct Data: Convertible {
 
     public enum Unit: Double {
-        case bit = 1_000_000.0
-        case kilobit = 1_000.0
-        case kilobyte = 125.0
+        case bit = 0.000_001
+        case byte = 0.000_008
+        case kilobit = 0.001
+        case kilobyte = 0.008
         case megabit = 1.0
-        case megabyte = 0.125
-        case gigabit = 0.001
-        case gigabyte = 0.000_125
-        case terabit = 0.000_001
-        case terabyte = 0.000_000_125
-        case petabit = 0.000_000_001
-        case petabyte = 0.000_000_000_125
+        case megabyte = 8.0
+        case gigabit = 1_000.0
+        case gigabyte = 8_000.0
+        case terabit = 1_000_000.0
+        case terabyte = 8_000_000.0
+        case petabit = 1_000_000_000.0
+        case petabyte = 8_000_000_000.0
     }
 
     public let value: Double
@@ -55,6 +56,10 @@ public extension Double {
 
     public var bit: Data {
         return Data(value: self, unit: .bit)
+    }
+
+    public var byte: Data {
+        return Data(value: self, unit: .byte)
     }
 
     public var kilobit: Data {
