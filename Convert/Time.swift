@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Time: Convertible {
 
@@ -115,6 +116,70 @@ public extension Double {
 
     public var millennium: Time {
         return Time(value: self, unit: .millennium)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var nanosecond: Time {
+        return Time(value: Double(self), unit: .nanosecond)
+    }
+
+    public var microsecond: Time {
+        return Time(value: Double(self), unit: .microsecond)
+    }
+
+    public var millisecond: Time {
+        return Time(value: Double(self), unit: .millisecond)
+    }
+
+    public var centisecond: Time {
+        return Time(value: Double(self), unit: .centisecond)
+    }
+
+    public var second: Time {
+        return Time(value: Double(self), unit: .second)
+    }
+
+    public var minute: Time {
+        return Time(value: Double(self), unit: .minute)
+    }
+
+    public var hour: Time {
+        return Time(value: Double(self), unit: .hour)
+    }
+
+    public var day: Time {
+        return Time(value: Double(self), unit: .day)
+    }
+
+    public var week: Time {
+        return Time(value: Double(self), unit: .week)
+    }
+
+    public var fortnight: Time {
+        return Time(value: Double(self), unit: .fortnight)
+    }
+
+    public var month: Time {
+        return Time(value: Double(self), unit: .month)
+    }
+
+    public var year: Time {
+        return Time(value: Double(self), unit: .year)
+    }
+
+    public var decade: Time {
+        return Time(value: Double(self), unit: .decade)
+    }
+
+    public var century: Time {
+        return Time(value: Double(self), unit: .century)
+    }
+
+    public var millennium: Time {
+        return Time(value: Double(self), unit: .millennium)
     }
 
 }

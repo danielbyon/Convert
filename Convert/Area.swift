@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Area: Convertible {
 
@@ -76,6 +77,38 @@ public extension Double {
 
     public var hectare: Area {
         return Area(value: self, unit: .hectare)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var squareFoot: Area {
+        return Area(value: Double(self), unit: .squareFoot)
+    }
+
+    public var squareYard: Area {
+        return Area(value: Double(self), unit: .squareYard)
+    }
+
+    public var squareMeter: Area {
+        return Area(value: Double(self), unit: .squareMeter)
+    }
+
+    public var squareKilometer: Area {
+        return Area(value: Double(self), unit: .squareKilometer)
+    }
+
+    public var squareMile: Area {
+        return Area(value: Double(self), unit: .squareMile)
+    }
+
+    public var acre: Area {
+        return Area(value: Double(self), unit: .acre)
+    }
+
+    public var hectare: Area {
+        return Area(value: Double(self), unit: .hectare)
     }
 
 }

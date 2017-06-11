@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Data: Convertible {
 
@@ -100,6 +101,58 @@ public extension Double {
 
     public var petabyte: Data {
         return Data(value: self, unit: .petabyte)
+    }
+    
+}
+
+public extension CGFloat {
+
+    public var bit: Data {
+        return Data(value: Double(self), unit: .bit)
+    }
+
+    public var byte: Data {
+        return Data(value: Double(self), unit: .byte)
+    }
+
+    public var kilobit: Data {
+        return Data(value: Double(self), unit: .kilobit)
+    }
+
+    public var kilobyte: Data {
+        return Data(value: Double(self), unit: .kilobyte)
+    }
+
+    public var megabit: Data {
+        return Data(value: Double(self), unit: .megabit)
+    }
+
+    public var megabyte: Data {
+        return Data(value: Double(self), unit: .megabyte)
+    }
+
+    public var gigabit: Data {
+        return Data(value: Double(self), unit: .gigabit)
+    }
+
+    public var gigabyte: Data {
+        return Data(value: Double(self), unit: .gigabyte)
+    }
+
+    public var terabit: Data {
+        return Data(value: Double(self), unit: .terabit)
+    }
+
+    public var terabyte: Data {
+        return Data(value: Double(self), unit: .terabyte)
+    }
+
+    public var petabit: Data {
+        return Data(value: Double(self), unit: .petabit)
+    }
+
+    public var petabyte: Data {
+        return Data(value: Double(self), unit: .petabyte)
     }
     
 }

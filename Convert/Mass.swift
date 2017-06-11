@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Mass: Convertible {
 
@@ -106,5 +107,61 @@ public extension Double {
     public var stone: Mass {
         return Mass(value: self, unit: .stone)
     }
+    
+}
 
+public extension CGFloat {
+
+    public var milligram: Mass {
+        return Mass(value: Double(self), unit: .milligram)
+    }
+
+    public var centigram: Mass {
+        return Mass(value: Double(self), unit: .centigram)
+    }
+
+    public var decigram: Mass {
+        return Mass(value: Double(self), unit: .decigram)
+    }
+
+    public var gram: Mass {
+        return Mass(value: Double(self), unit: .gram)
+    }
+
+    public var dekagram: Mass {
+        return Mass(value: Double(self), unit: .dekagram)
+    }
+
+    public var hectogram: Mass {
+        return Mass(value: Double(self), unit: .hectogram)
+    }
+
+    public var kilogram: Mass {
+        return Mass(value: Double(self), unit: .kilogram)
+    }
+
+    public var ton: Mass {
+        return Mass(value: Double(self), unit: .ton)
+    }
+
+    public var carat: Mass {
+        return Mass(value: Double(self), unit: .carat)
+    }
+
+    public var newton: Mass {
+        return Mass(value: Double(self), unit: .newton)
+    }
+
+    public var ounce: Mass {
+        return Mass(value: Double(self), unit: .ounce)
+    }
+
+    public var pound: Mass {
+        return Mass(value: Double(self), unit: .pound)
+    }
+
+    public var stone: Mass {
+        return Mass(value: Double(self), unit: .stone)
+    }
+    
 }

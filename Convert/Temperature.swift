@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Temperature: Convertible {
 
@@ -55,6 +56,22 @@ public extension Double {
 
     public var fahrenheit: Temperature {
         return Temperature(value: self, unit: .fahrenheit)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var kelvin: Temperature {
+        return Temperature(value: Double(self), unit: .kelvin)
+    }
+
+    public var celsius: Temperature {
+        return Temperature(value: Double(self), unit: .celsius)
+    }
+
+    public var fahrenheit: Temperature {
+        return Temperature(value: Double(self), unit: .fahrenheit)
     }
 
 }

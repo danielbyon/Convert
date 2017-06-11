@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Energy: Convertible {
 
@@ -80,6 +81,42 @@ public extension Double {
 
     public var footPound: Energy {
         return Energy(value: self, unit: .footPound)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var joule: Energy {
+        return Energy(value: Double(self), unit: .joule)
+    }
+
+    public var kilojoule: Energy {
+        return Energy(value: Double(self), unit: .kilojoule)
+    }
+
+    public var gramcalorie: Energy {
+        return Energy(value: Double(self), unit: .gramcalorie)
+    }
+
+    public var kilocalorie: Energy {
+        return Energy(value: Double(self), unit: .kilocalorie)
+    }
+
+    public var watthour: Energy {
+        return Energy(value: Double(self), unit: .watthour)
+    }
+
+    public var kilowatthour: Energy {
+        return Energy(value: Double(self), unit: .kilowattHour)
+    }
+
+    public var btu: Energy {
+        return Energy(value: Double(self), unit: .btu)
+    }
+
+    public var footPound: Energy {
+        return Energy(value: Double(self), unit: .footPound)
     }
 
 }

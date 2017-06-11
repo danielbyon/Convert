@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Length: Convertible {
 
@@ -110,6 +111,66 @@ public extension Double {
 
     public var league: Length {
         return Length(value: self, unit: .league)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var millimeter: Length {
+        return Length(value: Double(self), unit: .millimeter)
+    }
+
+    public var centimeter: Length {
+        return Length(value: Double(self), unit: .centimeter)
+    }
+
+    public var decimeter: Length {
+        return Length(value: Double(self), unit: .decimeter)
+    }
+
+    public var meter: Length {
+        return Length(value: Double(self), unit: .meter)
+    }
+
+    public var dekameter: Length {
+        return Length(value: Double(self), unit: .dekameter)
+    }
+
+    public var hectometer: Length {
+        return Length(value: Double(self), unit: .hectometer)
+    }
+
+    public var kilometer: Length {
+        return Length(value: Double(self), unit: .kilometer)
+    }
+
+    public var yard: Length {
+        return Length(value: Double(self), unit: .yard)
+    }
+
+    public var parsec: Length {
+        return Length(value: Double(self), unit: .parsec)
+    }
+
+    public var mile: Length {
+        return Length(value: Double(self), unit: .mile)
+    }
+
+    public var foot: Length {
+        return Length(value: Double(self), unit: .foot)
+    }
+
+    public var fathom: Length {
+        return Length(value: Double(self), unit: .fathom)
+    }
+
+    public var inch: Length {
+        return Length(value: Double(self), unit: .inch)
+    }
+
+    public var league: Length {
+        return Length(value: Double(self), unit: .league)
     }
 
 }

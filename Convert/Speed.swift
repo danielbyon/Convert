@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Speed: Convertible {
 
@@ -65,6 +66,30 @@ public extension Double {
 
     public var knot: Speed {
         return Speed(value: self, unit: .knot)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var meterPerSecond: Speed {
+        return Speed(value: Double(self), unit: .meterPerSecond)
+    }
+
+    public var milePerHour: Speed {
+        return Speed(value: Double(self), unit: .milePerHour)
+    }
+
+    public var footPerSecond: Speed {
+        return Speed(value: Double(self), unit: .footPerSecond)
+    }
+
+    public var kilometerPerHour: Speed {
+        return Speed(value: Double(self), unit: .kilometerPerHour)
+    }
+
+    public var knot: Speed {
+        return Speed(value: Double(self), unit: .knot)
     }
 
 }

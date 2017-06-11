@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Frequency: Convertible {
 
@@ -96,6 +97,54 @@ public extension Double {
 
     public var revolutionsPerMinute: Frequency {
         return Frequency(value: self, unit: .revolutionsPerMinute)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var hertz: Frequency {
+        return Frequency(value: Double(self), unit: .hertz)
+    }
+
+    public var kilohertz: Frequency {
+        return Frequency(value: Double(self), unit: .kilohertz)
+    }
+
+    public var megahertz: Frequency {
+        return Frequency(value: Double(self), unit: .megahertz)
+    }
+
+    public var gigahertz: Frequency {
+        return Frequency(value: Double(self), unit: .gigahertz)
+    }
+
+    public var degreesPerHour: Frequency {
+        return Frequency(value: Double(self), unit: .degreesPerHour)
+    }
+
+    public var degreesPerMinute: Frequency {
+        return Frequency(value: Double(self), unit: .degreesPerMinute)
+    }
+
+    public var degreesPerSecond: Frequency {
+        return Frequency(value: Double(self), unit: .degreesPerSecond)
+    }
+
+    public var radiansPerHour: Frequency {
+        return Frequency(value: Double(self), unit: .radiansPerHour)
+    }
+
+    public var radiansPerMinute: Frequency {
+        return Frequency(value: Double(self), unit: .radiansPerMinute)
+    }
+
+    public var radiansPerSecond: Frequency {
+        return Frequency(value: Double(self), unit: .radiansPerSecond)
+    }
+
+    public var revolutionsPerMinute: Frequency {
+        return Frequency(value: Double(self), unit: .revolutionsPerMinute)
     }
 
 }

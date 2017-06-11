@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Angle: Convertible {
 
@@ -75,6 +76,38 @@ public extension Double {
 
     public var secondOfArc: Angle {
         return Angle(value: self, unit: .secondOfArc)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var degree: Angle {
+        return Angle(value: Double(self), unit: .degree)
+    }
+
+    public var radian: Angle {
+        return Angle(value: Double(self), unit: .radian)
+    }
+
+    public var pi: Angle {
+        return Angle(value: Double(self), unit: .pi)
+    }
+
+    public var gradian: Angle {
+        return Angle(value: Double(self), unit: .gradian)
+    }
+
+    public var milliradian: Angle {
+        return Angle(value: Double(self), unit: .milliradian)
+    }
+
+    public var minuteOfArc: Angle {
+        return Angle(value: Double(self), unit: .minuteOfArc)
+    }
+
+    public var secondOfArc: Angle {
+        return Angle(value: Double(self), unit: .secondOfArc)
     }
 
 }

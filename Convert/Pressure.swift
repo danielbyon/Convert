@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Pressure: Convertible {
 
@@ -65,6 +66,30 @@ public extension Double {
 
     public var torr: Pressure {
         return Pressure(value: self, unit: .torr)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var atmosphere: Pressure {
+        return Pressure(value: Double(self), unit: .atmosphere)
+    }
+
+    public var bar: Pressure {
+        return Pressure(value: Double(self), unit: .bar)
+    }
+
+    public var pascal: Pressure {
+        return Pressure(value: Double(self), unit: .pascal)
+    }
+
+    public var psi: Pressure {
+        return Pressure(value: Double(self), unit: .psi)
+    }
+
+    public var torr: Pressure {
+        return Pressure(value: Double(self), unit: .torr)
     }
 
 }

@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Volume: Convertible {
 
@@ -115,6 +116,70 @@ public extension Double {
 
     public var tablespoon: Volume {
         return Volume(value: self, unit: .tablespoon)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var microliter: Volume {
+        return Volume(value: Double(self), unit: .microliter)
+    }
+
+    public var milliliter: Volume {
+        return Volume(value: Double(self), unit: .milliliter)
+    }
+
+    public var centiliter: Volume {
+        return Volume(value: Double(self), unit: .centiliter)
+    }
+
+    public var liter: Volume {
+        return Volume(value: Double(self), unit: .liter)
+    }
+
+    public var dekaliter: Volume {
+        return Volume(value: Double(self), unit: .dekaliter)
+    }
+
+    public var hectoliter: Volume {
+        return Volume(value: Double(self), unit: .hectoliter)
+    }
+
+    public var kiloliter: Volume {
+        return Volume(value: Double(self), unit: .kiloliter)
+    }
+
+    public var gill: Volume {
+        return Volume(value: Double(self), unit: .gill)
+    }
+
+    public var gallon: Volume {
+        return Volume(value: Double(self), unit: .gallon)
+    }
+
+    public var cup: Volume {
+        return Volume(value: Double(self), unit: .cup)
+    }
+
+    public var pint: Volume {
+        return Volume(value: Double(self), unit: .pint)
+    }
+
+    public var quart: Volume {
+        return Volume(value: Double(self), unit: .quart)
+    }
+
+    public var fluidOunce: Volume {
+        return Volume(value: Double(self), unit: .fluidOunce)
+    }
+
+    public var teaspoon: Volume {
+        return Volume(value: Double(self), unit: .teaspoon)
+    }
+
+    public var tablespoon: Volume {
+        return Volume(value: Double(self), unit: .tablespoon)
     }
 
 }

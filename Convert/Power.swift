@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Power: Convertible {
 
@@ -70,6 +71,34 @@ public extension Double {
 
     public var horsepower: Power {
         return Power(value: self, unit: .horsepower)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var milliwatt: Power {
+        return Power(value: Double(self), unit: .milliwatt)
+    }
+
+    public var watt: Power {
+        return Power(value: Double(self), unit: .watt)
+    }
+
+    public var kilowatt: Power {
+        return Power(value: Double(self), unit: .kilowatt)
+    }
+
+    public var megawatt: Power {
+        return Power(value: Double(self), unit: .megawatt)
+    }
+
+    public var gigawatt: Power {
+        return Power(value: Double(self), unit: .gigawatt)
+    }
+
+    public var horsepower: Power {
+        return Power(value: Double(self), unit: .horsepower)
     }
 
 }

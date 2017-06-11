@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct Metric: Convertible {
 
@@ -105,6 +106,62 @@ public extension Double {
 
     public var peta: Metric {
         return Metric(value: self, unit: .peta)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var nano: Metric {
+        return Metric(value: Double(self), unit: .nano)
+    }
+
+    public var micro: Metric {
+        return Metric(value: Double(self), unit: .micro)
+    }
+
+    public var milli: Metric {
+        return Metric(value: Double(self), unit: .milli)
+    }
+
+    public var centi: Metric {
+        return Metric(value: Double(self), unit: .centi)
+    }
+
+    public var deci: Metric {
+        return Metric(value: Double(self), unit: .deci)
+    }
+
+    public var base: Metric {
+        return Metric(value: Double(self), unit: .base)
+    }
+
+    public var deka: Metric {
+        return Metric(value: Double(self), unit: .deka)
+    }
+
+    public var hecto: Metric {
+        return Metric(value: Double(self), unit: .hecto)
+    }
+
+    public var kilo: Metric {
+        return Metric(value: Double(self), unit: .kilo)
+    }
+
+    public var mega: Metric {
+        return Metric(value: Double(self), unit: .mega)
+    }
+
+    public var giga: Metric {
+        return Metric(value: Double(self), unit: .giga)
+    }
+
+    public var tera: Metric {
+        return Metric(value: Double(self), unit: .tera)
+    }
+
+    public var peta: Metric {
+        return Metric(value: Double(self), unit: .peta)
     }
 
 }

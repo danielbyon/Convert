@@ -24,6 +24,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 public struct DataTransferRate: Convertible {
 
@@ -100,6 +101,58 @@ public extension Double {
 
     public var petabytePerSecond: DataTransferRate {
         return DataTransferRate(value: self, unit: .petabytePerSecond)
+    }
+
+}
+
+public extension CGFloat {
+
+    public var bitPerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .bitPerSecond)
+    }
+
+    public var bytePerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .bytePerSecond)
+    }
+
+    public var kilobitPerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .kilobitPerSecond)
+    }
+
+    public var kilobytePerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .kilobytePerSecond)
+    }
+
+    public var megabitPerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .megabitPerSecond)
+    }
+
+    public var megabytePerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .megabytePerSecond)
+    }
+
+    public var gigabitPerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .gigabitPerSecond)
+    }
+
+    public var gigabytePerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .gigabytePerSecond)
+    }
+
+    public var terabitPerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .terabitPerSecond)
+    }
+
+    public var terabytePerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .terabytePerSecond)
+    }
+
+    public var petabitPerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .petabitPerSecond)
+    }
+
+    public var petabytePerSecond: DataTransferRate {
+        return DataTransferRate(value: Double(self), unit: .petabytePerSecond)
     }
 
 }
