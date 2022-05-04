@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.4
 
 import PackageDescription
 
@@ -10,8 +10,8 @@ let package = Package(
             targets: ["Convert"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Quick/Quick.git", from: "2.0.0"),
-        .package(url: "https://github.com/Quick/Nimble.git", from: "8.0.0"),
+        .package(url: "https://github.com/Quick/Quick.git", from: "5.0.0"),
+        .package(url: "https://github.com/Quick/Nimble.git", from: "10.0.0"),
     ],
     targets: [
         .target(
